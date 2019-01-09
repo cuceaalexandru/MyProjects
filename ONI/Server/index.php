@@ -1,12 +1,26 @@
-<!DOCTYPE HTML>
 <html>
 <body>
 
-<form action="welcome_get.php" method="get">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="name">
+</br>
+  Password: <input type="text" name="password">
+</br>
+  <input type="submit">
 </form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = $_REQUEST['name'];
+    $password = $_REQUEST['password'];
+    if (empty($name) && empty('password')) {
+        echo "Name is empty";
+    } else {
+        echo $name . "</br>" . $password;
+    }
+}
+?>
 
 </body>
 </html>
