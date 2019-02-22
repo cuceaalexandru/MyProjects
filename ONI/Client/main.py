@@ -9,11 +9,6 @@ import time #used for sleep()
 import os
 import shutil
 
-#Get webpage content
-#resp = urllib2.urlopen('http://localhost/ONI/index.php?')
-#page = resp.read()
-#print page
-
 #Make post request ex:send ID
 def get_date():
     currentDT = datetime.datetime.now()
