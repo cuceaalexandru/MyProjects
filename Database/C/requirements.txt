@@ -1,2 +1,3 @@
 ##FIX SQLITE3.H NO SUCH FILE OR DIRECTORY PROBLEM
+
 sudo apt-get install libsqlite3-dev
