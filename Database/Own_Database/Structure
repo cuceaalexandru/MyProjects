@@ -10,3 +10,5 @@ Back end of the SQLITE database:
 	-B-tree (retrieve a page from disk or save it back by issuing commands to pager)
 	-pager (keeps a cache of recently-accessed pages in memory and reads or writes pages of data)
 	-os interface 
+	
+Stuck here because of using gcc https://cstack.github.io/db_tutorial/parts/part10.html
