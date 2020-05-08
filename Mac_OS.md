@@ -43,5 +43,5 @@
 ## Open application homepage
 > brew cask home pycharm
 
-## Tap a repository that doesn't exist in brew
+## Tap a package that doesn't exist in brew
 > brew tap heroku/brew
